@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Contador</h1>
+        <form action="destino.php" method="POST">
+            <div class="row mb-3">
+                <label for="inicio" class="col-sm-2 col-form-label">Início:</label>
+                <div class="col-sm-9">
+                    <input type="number" id="inicio" name="inicio" class="form-control" value="1">
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label for="final" class="col-sm-2 col-form-label">Final:</label>
+                <div class="col-sm-9">
+                    <input type="number" id="final" name="final" class="form-control" value="10">
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label for="incremento" class="col-sm-2 col-form-label">Incremento:</label>
+                <div class="col-sm-9">
+                    <input type="number" id="incremento" name="incremento" class="form-control" value="1">
+                </div>
+            </div>
+            <button type="submit" class="btn btn-success">Enviar</button>
+            <button type="reset" class="btn btn-warning">Limpar</button>
+        </form>
+
+        <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        label{
+            margin-right: 5px;
+        }
+        .container {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        
+        h1 {
+            text-align: center;
+        }
+        
+        table {
+            width: 100%;
+        }
+        
+        th, td {
+            padding: 5px;
+            text-align: center;
+        }
+        </style>
+        
+    </div>
+</body>
+</html>

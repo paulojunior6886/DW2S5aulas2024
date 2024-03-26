@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.min.css">
+    <script src="bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+        form{
+            padding-left: 35%;
+            padding-top: 2%;
+        }
+        h1, hr{
+            margin-left: 40px ;
+            margin-right: 40px;
+        }
+       
+    </style>
+</head>
+
+<body>
+
+    <h1 class="my-3">Formulário</h1>
+    <hr class="mb-4">
+    <form class="row g-3" action="destino.php" method="POST">
+        <div class="row">
+            <div class="col-6 my-2">
+                <label for="titulo">Título da Página:</label>
+                <input class="form-control" type="text" name="titulo" id="titulo" required autofocus>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6 my-2">
+                <label for="corpo">Corpo</label>
+                <textarea class="form-control" type="textarea" name="corpo" id="corpo" placeholder="Digite o conteúdo"></textarea>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6 my-2">
+                <label for="cor">Cor do Texto:</label>
+                <input class="form-control" type="color" name="cor" id="cor" required autofocus>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6 my-2">
+                <label for="imagem">Url da Imagem:</label>
+                <input class="form-control" type="url" name="imagem" id="imagem" required autofocus>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6 my-2">
+                <label for="link">Url do link:</label>
+                <input class="form-control" type="url" name="link" id="link" required autofocus>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6 my-2">
+                <label for="fundo">Cor do Plano de Fundo:</label>
+                <input class="form-control" type="color" name="fundo" id="fundo" required autofocus>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3 my-3">
+                <button type="submit" class="btn btn-primary">Enviar</button>
+                <button type="reset" class="btn btn-warning">Limpar</button>
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>

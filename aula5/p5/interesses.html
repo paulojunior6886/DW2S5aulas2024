@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Interesses</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .categorias {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .coluna {
+            margin: 10px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 5px;
+        }
+
+        input[type="checkbox"], h4 {
+            margin-right: 5px;
+            margin-left: 25px;
+        }
+
+        .botoes {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            padding: 5px 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Praticando 5 - Formulário de Interesses</h1>
+    <hr>
+    
+        <h4>Escolha alguns dos seus interesses:</h4>
+        <form action="destino.php" method="post">
+            <ul>
+                <div class="row">
+                    <div class="col-3">
+                        <li><input type="checkbox" id="idioma" name="interesses[]" value="idioma">
+                            <label for="idioma">Aprender um novo idioma</label>
+                        </li>
+                        <li><input type="checkbox" id="esporte" name="interesses[]" value="esporte">
+                            <label for="esporte">Praticar um esporte</label>
+                        </li>
+                        <li><input type="checkbox" id="culinaria" name="interesses[]" value="culinaria">
+                            <label for="culinaria">Experimentar culinária exótica</label>
+                        </li>
+                        <li><input type="checkbox" id="literatura" name="interesses[]" value="literatura">
+                            <label for="literatura">Ler um clássico da literatura</label>
+                        </li>
+                        <li><input type="checkbox" id="curso" name="interesses[]" value="curso">
+                            <label for="curso">Fazer um curso online</label>
+                        </li>
+                        <li><input type="checkbox" id="acampamento" name="interesses[]" value="acampamento">
+                            <label for="acampamento">Acampar na natureza</label>
+                        </li>
+                    </div>
+
+
+
+                    <div class="col-3">
+                        <li><input type="checkbox" id="festival" name="interesses[]" value="festival">
+                            <label for="festival">Assistir a um festival de música</label>
+                        </li>
+                        <li><input type="checkbox" id="viagem" name="interesses[]" value="viagem">
+                            <label for="viagem">Visitar um novo país</label>
+                        </li>
+                        <li><input type="checkbox" id="instrumento" name="interesses[]" value="instrumento">
+                            <label for="instrumento">Aprender a tocar um instrumento musical</label>
+                        </li>
+                        <li><input type="checkbox" id="meditacao" name="interesses[]" value="meditacao">
+                            <label for="meditacao">Meditar para relaxar a mente</label>
+                        </li>
+                        <li><input type="checkbox" id="escrita" name="interesses[]" value="escrita">
+                            <label for="escrita">Escrever um conto ou poesia</label>
+                        </li>
+                        <li><input type="checkbox" id="voluntariado" name="interesses[]" value="voluntariado">
+                            <label for="voluntariado">Fazer um trabalho voluntário</label>
+                        </li>
+                    </div>
+
+                    <div class="col-3">
+                        <li><input type="checkbox" id="pet" name="interesses[]" value="pet">
+                            <label for="pet">Adotar um animal de estimação</label>
+                        </li>
+                        <li><input type="checkbox" id="colecao" name="interesses[]" value="colecao">
+                            <label for="colecao">Colecionar objetos antigos</label>
+                        </li>
+                        <li><input type="checkbox" id="fotografia" name="interesses[]" value="fotografia">
+                            <label for="fotografia">Praticar fotografia</label>
+                        </li>
+                        <li><input type="checkbox" id="programacao" name="interesses[]" value="programacao">
+                            <label for="programacao">Aprender a programar</label>
+                        </li>
+                        <li><input type="checkbox" id="leitura" name="interesses[]" value="leitura">
+                            <label for="leitura">Participar de um grupo de leitura</label>
+                        </li>
+                        <li><input type="checkbox" id="vinho" name="interesses[]" value="vinho">
+                            <label for="vinho">Fazer um curso de degustação de vinhos</label>
+                        </li>
+                    </div>
+
+                    <div class="col-3">
+                        <li><input type="checkbox" id="teatro" name="interesses[]" value="teatro">
+                            <label for="teatro">Assistir a uma peça de teatro</label>
+                        </li>
+                        <li><input type="checkbox" id="piquenique" name="interesses[]" value="piquenique">
+                            <label for="piquenique">Fazer um piquenique no parque</label>
+                        </li>
+                        <li><input type="checkbox" id="correr" name="interesses[]" value="correr">
+                            <label for="correr">Fazer uma corrida</label>
+                        </li>
+                        <li><input type="checkbox" id="familia" name="interesses[]" value="familia">
+                            <label for="familia">Ficar com a familia</label>
+                        </li>
+                        <li><input type="checkbox" id="churrasco" name="interesses[]" value="churrasco">
+                            <label for="churrasco">Fazer um churrasco</label>
+                        </li>
+                        <li><input type="checkbox" id="jogar" name="interesses[]" value="jogar">
+                            <label for="jogar">Jogar vídeo game</label>
+                        </li>
+                    </div>
+
+                </div>
+                <div class="botoes">
+                    <input type="submit" class="btn btn-success" value="Enviar">
+                    <input type="reset" class="btn btn-warning" value="Limpar">
+                </div>
+        </form>
+</body>
+
+</html>

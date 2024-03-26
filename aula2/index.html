@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.min.css">
+    <script src="bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+
+    <h1>Formulário de cadastro</h1>
+    <hr>
+    <div class="container">
+
+        <form id="form2" class="form-group mb-3">
+            <div class="row">
+                <div class="col-9"><!--Nome-->
+                    <label for="name">Nome Completo:</label><br>
+                    <input type="text" id="name" name="name" class="form-control" required>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3"><!--telefone-->
+                    <label for="telefone">Telefone</label>
+                    <input type="tel" id="telefone" class="form-control" required="required" maxlength="15" name="phone"
+                        placeholder="(xx)xxxxx-xxxx" title="(DD)xxxxx-xxxx"
+                        pattern="\([0-9]{2}\) [0-9]{4,6}-[0-9]{3,4}$" data-inputmask-mask="(xx)xxxxx-xxxx" />
+                </div>
+                <div class="col-6"><!--email-->
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" required="required" class="form-control" name="email"
+                        placeholder="Digite seu E-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" />
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-3"><!--cpf-->
+                    <label for="cpf">CPF:</label>
+                    <input type="text" id="cpf" name="cpf" class="form-control" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}"
+                        placeholder="xxx.xxx.xxx-xx" title="Digite seu CPF no formato: xxx.xxx.xxx-xx" required />
+
+                </div>
+                <div class="col-3"><!--datanasc-->
+                    <label for="date">Data de Nascimento:</label>
+                    <input type="date" id="date" required="required" class="form-control" maxlength="10" name="date"
+                        pattern="[0-9]{2}\/[0-9]{2}\/[0-9]{4}$" min="1800-01-01" max="2024-02-28"
+                        data-inputmask-inputformat="dd/mm/yyyy" />
+                </div>
+                <div class="col-3"><!--cep-->
+                    <label for="cep">CEP:</label>
+                    <input type="text" id="cep" required="required" class="form-control" maxlength="10" name="cep"
+                        pattern="\d{2}\.\d{3}-\d{3}" placeholder="XX.XXX-XXX" data-inputmask-inputformat="xx.xxx-xxx"
+                        title="Informe o CEP nesse formato: XX.XXX-XXX" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6"><!--endereco-->
+                    <label for="endereco">Endereço:</label>
+                    <input type="text" id="endereco" required class="form-control" name="endereco" pattern=".{5,100}"
+                        placeholder="Exemplo: Rua Nome da Rua, 123, Bairro XYZ" />
+                </div>
+                <div class="col-3"><!--cidade-->
+                    <label for="cidade">Cidade:</label>
+                    <select id="cidade" required class="form-control" name="cidade">
+                        <option value="">[Selecione]</option>
+                        <option value="Cosmorama">Cosmorama</option>
+                        <option value="Votuporanga">Votuporanga</option>
+                    </select>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-3"><!--foto-->
+                    <label for="foto">Foto de perfil:</label>
+                    <input type="file" class="form-control" id="foto" name="foto" accept="image/*" required="required"
+                        title="Formato aceito apenas imagem " />
+                    <br> <input type="submit" class="btn btn-primary" value="Enviar" id="enviar">
+                    <input type="reset" class="btn btn-warning" value="Limpar" id="limpar">
+                </div>
+                <div class="col-6"><!--contrato-->
+                    <label for="contrato">Contrato assinado (em PDF):</label>
+                    <input type="file" name="contrato" class="form-control" accept=".pdf" required="required"
+                        title="Formato aceito apenas PDF" />
+
+
+
+                </div>
+                <!-- <img src="form.PNG" alt="imagem de formulário"> -->
+            </div>
+            <div class="image-container">
+                <img src="form.PNG" alt="imagem de formulário">
+            </div>
+        </form>
+
+    </div>
+
+</body>
+
+</html>

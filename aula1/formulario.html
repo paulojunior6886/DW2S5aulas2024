@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.min.css">
+    <script src="bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <ul class="op">
+            <li class="post"><a href="postagem.html">Postagem c/ Imagem</a></li>
+            <li class="formu"><a href="formulario.html">Formulário/Tabela</a></li>
+            <li class="busc"><a href="busca.html">Busca</a></li>
+            <li class="inic"><a href="index.html">Início</a></li>
+
+
+
+        </ul>
+    </nav>
+
+    <h1 class="title_form">Formulário de cadastro e Tabela de dados</h1>
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-md-4">
+                <form id="form1">
+                    <label for="nome">Nome Completo:</label><br>
+                    <input type="name" id="name" name="" class="form-control" required>
+
+                    <label for="telefone">Telefone: </label>
+                    <input type="tel" id="telefone" name="telefone" class="form-control" placeholder="(99)99999-9999"
+                        required>
+
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" class="form-control" placeholder="seuemail@example.com"
+                        required>
+
+
+
+                    <label for="residencia">Estado de residência</label>
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>[Selecione]</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select><br>
+
+                    <div class="col-4">
+                        <button type="submit" class="enviar">Enviar</button>
+                    </div>
+                    <div class="col-4">
+                        <button type="submit" class="limpar">Limpar</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-8">
+                <div class="col-12 text-start">
+
+                    <table class="table table-bordered" id="table">
+                        <thead class="table table-success table-striped">
+                            <tr>
+                                <th scope="col" id="l0">Nome</th>
+                                <th scope="col" id="l0">Telefone</th>
+                                <th scope="col" id="l0">Email</th>
+                                <th scope="col" id="l0">Estado</th>
+                                
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr> 
+                                <th scope="col" id="l1">José da Silva</th>
+                                <th scope="col" id="l1">(11)99785-4871</th>
+                                <th scope="col" id="l1">josesilva11@gmail.com</th>
+                                <th scope="col" id="l1">Santa Catarina</th>
+                                
+                            </tr>
+                            <tr>
+                                <th scope="col" id="l2">Marcos William Freitas</th>
+                                <th scope="col" id="l2">(11)99784-4812</th>
+                                <th scope="col" id="l2">mwfreitas@Qmicrosoft.com</th>
+                                <th scope="col" id="l2">São Paulo</th>
+                                
+                            </tr>
+                            <tr>
+                                <th scope="col" id="l3">Ana Luiza dos Reis Barco</th>
+                                <th scope="col" id="l3">(14) 81475-4812</th>
+                                <th scope="col" id="l3">anareis@Qmicrosoft.com</th>
+                                <th scope="col" id="l3">São Paulo</th>
+                                
+                            </tr>
+                            <tr>
+                                <th scope="col" id="l4">Keila Santanna de Souza</th>
+                                <th scope="col" id="l4">(17) 99744-1155</th>
+                                <th scope="col" id="l4">keilasantanna@Doutlook.com</th>
+                                <th scope="col" id="l4">São Paulo</th>
+                                
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

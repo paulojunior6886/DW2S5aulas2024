@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de tabelas</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        h1 {
+            margin-left: 5%;
+        }
+
+        form {
+            margin-left: 5%;
+        }
+
+        button {
+            margin-top: 1%;
+            height: 40px;
+            width: 80px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Praticando 4 - Gerador de tabelas</h1>
+    <hr>
+    <form action="tabela.php" method="POST">
+
+        <div class="row">
+
+            <div class="col-2">
+                <label for="linha">Linha:</label>
+                <input type="number" name="linha" id="linha" class="form-control">
+            </div>
+            <div class="col-2">
+                <label for="coluna">Coluna:</label>
+                <input type="number" name="coluna" id="coluna" class="form-control">
+            </div>
+            <div class="col-2">
+                <label for="estilo">Estilo:</label>
+                <select name="estilo" class="form-control">
+                    <option value="selecione">[Selecione]</option>
+                    <option value="table-primary">table-primary</option>
+                    <option value="table-secondary">table-secundary</option>
+                    <option value="table-success">table-success</option>
+                    <option value="table-danger">table-danger</option>
+                    <option value="table-warning">table-warning</option>
+                    <option value="table-info">table-info</option>
+                    <option value="table-light">table-light</option>
+                    <option value="table-dark">table-dark</option>
+                </select>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <button type="submit" class="btn- btn-success" id="gerar">Gerador</button>
+                <button type="reset" class="btn- btn-danger">Limpar</button>
+            </div>
+        </div>
+    </form>
+    <hr>
+    
+</body>
+
+</html>

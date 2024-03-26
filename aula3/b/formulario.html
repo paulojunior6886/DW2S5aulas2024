@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.min.css">
+    <script src="bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+
+    </style>
+</head>
+
+<body>
+
+    <h1 class="my-3">Formulário</h1>
+    <hr class="mb-4">
+    <form class="row g-3" action="destino.php" method="POST">
+        <div class="row">
+            <div class="col-3 my-2">
+                <label for="nome">Nome:</label>
+                <input class="form-control" type="text" name="nome" id="nome" required autofocus>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3 my-2">
+                <label for="email">E-mail</label>
+                <input class="form-control" type="email" name="email" id="email" | placeholder="Digite seu email"
+                    required>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3 my-2">
+                <label for="cor">Cor:</label>
+                <input class="form-control" type="text" name="cor" id="cor" required autofocus>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3 my-3">
+                <button type="submit" class="btn btn-primary">Enviar</button>
+                <button type="reset" class="btn btn-warning">Limpar</button>
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>

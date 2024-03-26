@@ -1,0 +1,27 @@
+h1{
+    padding-left: 7%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    position: relative;
+}
+
+.form-container {
+    float: left;
+    width: 70%;
+}
+
+.image-container {
+    float: right;
+    width: 20%;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+}
+
