@@ -1,28 +1,33 @@
-    <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.min.css">
-    <script src="bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
-    <!--Cabeçalho-->
-    <?php
-    require 'cabecalho.php';
+<?php
+session_start();
     ?>
-    <style>
-        form {
-            margin-left: 25%;
-        }
+<link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.min.css">
+<script src="bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
+<!--Cabeçalho-->
+<?php
+require 'cabecalho.php';
+?>
+<style>
+    form {
+        margin-left: 25%;
+    }
 
-        .title {
-            background-color: aliceblue;
-            text-align: center;
-            padding-top: 25px;
-            padding-bottom: 25px;
-            margin-bottom: 15px;
-        }
-        button{
-            text-align: center;
-            margin-top: 1vw;
-            margin-left: 16vw;
-        }
-    </style>
+    .title {
+        background-color: aliceblue;
+        text-align: center;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        margin-bottom: 15px;
+    }
+
+    button {
+        text-align: center;
+        margin-top: 1vw;
+        margin-left: 16vw;
+    }
+</style>
 </head>
+
 
 <body>
 
@@ -56,8 +61,7 @@
         </div>
     </form>
 
-<!--Rodapé-->
-<?php
-require 'rodape.php';
-?>
-
+    <!--Rodapé-->
+    <?php
+    require 'rodape.php';
+    ?>

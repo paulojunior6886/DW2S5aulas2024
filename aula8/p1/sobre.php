@@ -1,8 +1,10 @@
+<!--Cabeçalho-->
+<?php
 
-    <!--Cabeçalho-->
-    <?php
-    require'cabecalho.php';
-    ?>
+session_start();
+
+require 'cabecalho.php';
+?>
 </head>
 
 <body>
@@ -30,7 +32,7 @@
         é uma ótima opção.</p>
     <img src="php.png" alt="Logotipo do PHP em um fundo azul." width="200" height="200">
 
-<!--Rodapé-->
-<?php
-require'rodape.php';
-?>
+    <!--Rodapé-->
+    <?php
+    require 'rodape.php';
+    ?>

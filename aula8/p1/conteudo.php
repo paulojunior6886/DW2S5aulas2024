@@ -1,6 +1,9 @@
 <!--Cabeçalho-->
 <?php
+session_start();
+
 require'cabecalho.php';
+
 ?>
 <div class="inicio">
             <div class="bg-light p-4 mb-4 rounded">
@@ -19,4 +22,15 @@ require'cabecalho.php';
         <!--Rodapé-->
 <?php
 require'rodape.php';
+?>
+
+<?php
+if (isset($_SESSION["erro"]) && !empty($_SESSION["erro"])){
+?>
+<div class="alert alert-warning" role="alert">
+    <?=$_SESSION["erro"]?>
+</div>
+<?php
+unset($_SESSION["erro"]);
+}
 ?>

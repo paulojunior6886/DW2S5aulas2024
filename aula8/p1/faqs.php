@@ -1,5 +1,6 @@
     <!--Cabeçalho-->
     <?php
+    session_start();
     require'cabecalho.php';
     ?>
 
